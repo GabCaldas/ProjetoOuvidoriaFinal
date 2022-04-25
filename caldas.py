@@ -54,6 +54,8 @@ def opcao6():
     if protnumero == conversao:
         print(
             f" Protocolo: {manifest[protnumero - 1][0]} \n Requisitante: {manifest[protnumero - 1][1]} \n Manifestação: {manifest[protnumero - 1][2]} \n Descrição: {manifest[protnumero - 1][3]}")
+    if protnumero not in conversao:
+        print("Esse protocolo não existe, tente novamente!")
 
 
 
@@ -167,3 +169,4 @@ while True:
             elloquebrado = ello.split("#")
             elogio.append(elloquebrado)
             print(f"Seu elogio foi enviado. Obrigado {nome}! O número do seu protocolo é {protocolo}")
+
