@@ -88,7 +88,7 @@ while True:
     #LISTAR APENAS ELOGIOS
     if opcoes == 4:
         opcao4()
-
+    #PROCURAR POR PROTOCOLO
     if opcoes==6:
         opcao6()
 
