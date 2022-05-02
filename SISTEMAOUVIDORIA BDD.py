@@ -116,6 +116,7 @@ while opcao != 7:
             sql = f"""INSERT INTO tb_manifestos_caldas (nome_cliente,tipo_manifest,descricao) 
                                         values('{requisitante}', '{tipo}', '{descricao}'
                                         )"""
+            cursor = conexao.cursor()
             cursor.execute(sql)
             conexao.commit()
         elif tipo == 2:
@@ -127,17 +128,18 @@ while opcao != 7:
             sql2 = f"""INSERT INTO tb_manifestos_caldas (nome_cliente,tipo_manifest,descricao) 
                                                     values('{requisitante}', '{tipo}', '{descricao}'
                                                     )"""
+            cursor = conexao.cursor()
             cursor.execute(sql2)
             conexao.commit()
         elif tipo == 3:
             tipo = 'Elogio'
             codigo = len(listaProtocolo) + 1
-            print('=' * 60)
             descricao = str(input("Digite a descrição do seu elogio: "))
             print(f"Obrigado! {requisitante}!\n O número do seu protocolo é {codigo}")
             sql3 = f"""INSERT INTO tb_manifestos_caldas (nome_cliente,tipo_manifest,descricao) 
                                                     values('{requisitante}', '{tipo}', '{descricao}'
                                                     )"""
+            cursor = conexao.cursor()
             cursor.execute(sql3)
             conexao.commit()
 
