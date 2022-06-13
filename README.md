@@ -1,2 +1,2 @@
 # ProjetoOuvidoriaFinal
-Projeto de Gabriel Caldas, Renan Villar e Eduardo Garcia
+Composto apenas em terminal por Python e MYSQL, informações salvas em uma nuvem heroku
